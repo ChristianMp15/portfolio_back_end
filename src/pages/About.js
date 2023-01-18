@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import "../App.css"
 
 function About(props) {
 
@@ -6,8 +7,10 @@ function About(props) {
 
   return <div>
       <h2>{about.name}</h2>
-      <h3>{about.email}</h3>
+      <img src={about.headshot}/>
+      {<h3>{about.email}</h3> }
       <p>{about.bio}</p>
+      
     </div>
 }
 

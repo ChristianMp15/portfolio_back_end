@@ -13,3 +13,8 @@ export const aboutLoader = async () => {
     const about = await response.json()
     return about
 }
+export const githubLoader = async () => {
+    const response = await fetch(URL + "/github")
+    const github = await response.json()
+    return github
+}
